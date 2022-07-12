@@ -17,6 +17,7 @@ vim.g.maplocalleader = " "
 --   visual_block_mode = "x",
 --   term_mode = "t",
 --   command_mode = "c",
+--   operator_pending_mode = "o"
 
 -- Normal --
 -- Better window navigation
@@ -72,9 +73,18 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
+-- Operator Pending
+keymap("o", "<S-h>", "^", opts)
+keymap("o", "<S-l>", "g_", opts)
+
 -- Terminal --
 -- Better terminal navigation
 keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+
+-- hop.nvim
+local hop_trigger_key = "<Leader><Leader>" 
+keymap("n", hop_trigger_key .. "a", ":HopAnywhere<CR>", opts)
+keymap("n", hop_trigger_key .. "w", ":HopWord<CR>", opts)
