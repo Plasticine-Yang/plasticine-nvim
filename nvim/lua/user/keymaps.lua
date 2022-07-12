@@ -30,6 +30,10 @@ keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 keymap("n", "<S-h>", "^", opts)
 keymap("n", "<S-l>", "g_", opts)
 
+-- quit
+keymap("n", "q", ":q<CR>", opts)
+keymap("n", "qq", ":q!<CR>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
 keymap("n", "<C-Down>", ":resize -2<CR>", opts)
