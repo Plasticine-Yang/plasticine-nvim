@@ -45,6 +45,9 @@ keymap("n", "<S-r>", ":bnext<CR>", opts)
 keymap("n", "<S-e>", ":bprevious<CR>", opts)
 keymap("n", "<C-w>", ":bdelete<CR>", opts)
 
+-- save file
+keymap("n", "<C-s>", ":w<CR>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
