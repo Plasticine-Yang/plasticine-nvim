@@ -104,6 +104,14 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+  -- 语法高亮 nvim-treesitter
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+  -- treesitter 插件 用于彩虹括号
+  use "p00f/nvim-ts-rainbow"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
