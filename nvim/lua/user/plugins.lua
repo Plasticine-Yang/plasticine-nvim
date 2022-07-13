@@ -92,6 +92,9 @@ return packer.startup(function(use)
   -- 平滑滚动
   use 'karb94/neoscroll.nvim'
 
+  -- parameter hints 函数签名提示，调用函数的时候输入参数时会给出参数提示
+  use 'ray-x/lsp_signature.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
