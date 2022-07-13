@@ -16,3 +16,4 @@ require "user.cmp"
 -- plugin config
 require "user.plugin-config.comment" -- 代码注释
 require "user.plugin-config.surround" -- vim-surround
+require "user.plugin-config.neoscroll" -- 平滑滚动
