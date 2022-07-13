@@ -112,6 +112,9 @@ return packer.startup(function(use)
   -- treesitter 插件 用于彩虹括号
   use "p00f/nvim-ts-rainbow"
 
+  -- null-ls 提供 code actions、diagnostics、formatting、hover、completion 等多种功能
+  use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

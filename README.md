@@ -37,6 +37,16 @@ sudo apt install ripgrep
 
 ---
 
+### null-ls
+
+如果需要给`lua`使用代码格式化，需要安装`stylua`
+
+在 [stylua release](https://github.com/JohnnyMorganz/StyLua/releases) 中下载对应二进制文件放到系统环境变量目录即可
+
+`prettier`也是同理，总之就是要用到什么语言的格式化工具就要先安装才能使用
+
+---
+
 ## Usage
 
 使用符号链接的方式将配置文件链接到`~/.config/nvim`中即可
