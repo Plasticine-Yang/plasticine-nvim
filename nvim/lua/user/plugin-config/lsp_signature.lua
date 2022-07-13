@@ -13,5 +13,5 @@ lsp_signature.setup({
   -- INSERT 模式下按 ctrl n 开关函数签名提示
   toggle_key = "<C-n>",
   -- 选择下一个函数签名
-  select_signature_key = "<C-m>"
+  select_signature_key = "<A-n>"
 })

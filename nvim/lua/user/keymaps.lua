@@ -52,6 +52,7 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<A-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<C-w>", ":bdelete<CR>", opts)
+keymap("n", "<C-w><C-w>", ":bdelete!<CR>", opts)
 
 -- save file
 keymap("n", "<C-s>", ":w<CR>", opts)
