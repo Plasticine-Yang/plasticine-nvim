@@ -63,6 +63,9 @@ keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('te
 -- 搜索符号时正常预览
 keymap("n", "<C-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- NvimTree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)

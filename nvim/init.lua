@@ -22,3 +22,4 @@ require "user.plugin-config.surround" -- vim-surround
 require "user.plugin-config.neoscroll" -- 平滑滚动
 require "user.plugin-config.lsp_signature" -- 函数签名提示
 require "user.plugin-config.telescope" -- 文件/Symbol 搜索
+require "user.plugin-config.nvim-tree" -- 侧边文件浏览器

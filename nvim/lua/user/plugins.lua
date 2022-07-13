@@ -100,6 +100,9 @@ return packer.startup(function(use)
   -- 在 telescope 中预览图片
   use 'nvim-telescope/telescope-media-files.nvim'
 
+  -- NvimTree 侧边文件浏览器
+  use 'kyazdani42/nvim-web-devicons'
+  use 'kyazdani42/nvim-tree.lua'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
