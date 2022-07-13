@@ -26,6 +26,13 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- scroll
+keymap("n", "J", "5j", opts)
+keymap("n", "K", "5k", opts)
+keymap("n", "<C-u>", "10k", opts)
+keymap("n", "<C-d>", "10j", opts)
+
+
 keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 keymap("n", "<S-h>", "^", opts)
@@ -42,8 +49,8 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<S-r>", ":bnext<CR>", opts)
-keymap("n", "<S-e>", ":bprevious<CR>", opts)
+keymap("n", "<A-h>", ":bprevious<CR>", opts)
+keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<C-w>", ":bdelete<CR>", opts)
 
 -- save file
@@ -65,6 +72,9 @@ keymap("v", ">", ">gv", opts)
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
+
+keymap("v", "<S-h>", "^", opts)
+keymap("v", "<S-l>", "g_", opts)
 
 -- Visual Block --
 -- Move text up and down
