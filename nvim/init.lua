@@ -13,6 +13,9 @@ require "user.colorscheme"
 -- 代码补全
 require "user.cmp"
 
+-- LSP
+require "user.lsp"
+
 -- plugin config
 require "user.plugin-config.comment" -- 代码注释
 require "user.plugin-config.surround" -- vim-surround
