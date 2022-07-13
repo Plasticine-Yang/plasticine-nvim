@@ -95,6 +95,12 @@ return packer.startup(function(use)
   -- parameter hints 函数签名提示，调用函数的时候输入参数时会给出参数提示
   use 'ray-x/lsp_signature.nvim'
 
+  -- 文件搜索/Symbol 搜索
+  use 'nvim-telescope/telescope.nvim'
+  -- 在 telescope 中预览图片
+  use 'nvim-telescope/telescope-media-files.nvim'
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

@@ -56,6 +56,12 @@ keymap("n", "<C-w>", ":bdelete<CR>", opts)
 -- save file
 keymap("n", "<C-s>", ":w<CR>", opts)
 
+-- open telescope
+-- 搜索文件时不要预览
+keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<CR>", opts)
+-- 搜索符号时正常预览
+keymap("n", "<C-t>", "<cmd>Telescope live_grep<cr>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
