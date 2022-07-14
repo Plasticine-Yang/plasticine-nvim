@@ -13,7 +13,7 @@ null_ls.setup({
     -- StyLua
     formatting.stylua,
     -- frontend
-    formatting.prettier.with({
+    formatting.prettierd.with({
       filetypes = {
         'javascript',
         'javascriptreact',
@@ -29,6 +29,14 @@ null_ls.setup({
         'markdown',
       },
       prefer_local = 'node_modules/.bin',
+      formatCommand = 'prettierd "${INPUT}"',
+      formatStdin = true,
+      env = {
+        string.format(
+          'PRETTIERD_DEFAULT_CONFIG=%s',
+          vim.fn.expand('~/.config/nvim/utils/linter-config/.prettierrc.json')
+        ),
+      },
     }),
     -- formatting.fixjson,
     -- formatting.black.with({ extra_args = { "--fast" } }),
