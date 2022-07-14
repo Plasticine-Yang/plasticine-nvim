@@ -10,14 +10,12 @@ require('user.plugins')
 -- 主题配色
 require('user.colorscheme')
 
--- 代码补全
-require('user.cmp')
-
 -- LSP
 require('user.lsp')
 require('user.lsp.null-ls')
 
 -- plugin config
+require('user.plugin-config.cmp') -- 代码补全
 require('user.plugin-config.comment') -- 代码注释
 require('user.plugin-config.surround') -- vim-surround
 require('user.plugin-config.neoscroll') -- 平滑滚动
