@@ -119,6 +119,9 @@ return packer.startup(function(use)
   -- null-ls 提供 code actions、diagnostics、formatting、hover、completion 等多种功能
   use({ 'jose-elias-alvarez/null-ls.nvim', requires = 'nvim-lua/plenary.nvim' })
 
+  -- bufferline 显示打开的 buffer 标签
+  use({ 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
