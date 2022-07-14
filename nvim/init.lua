@@ -27,3 +27,4 @@ require('user.plugin-config.nvim-treesitter') -- 语法高亮
 require('user.plugin-config.bufferline') -- 显示打开的 buffer 标签栏
 require('user.plugin-config.indent-blank') -- 缩进竖线提示
 require('user.plugin-config.lualine') -- 底部信息栏显示
+require('user.plugin-config.toggleterm') -- 终端

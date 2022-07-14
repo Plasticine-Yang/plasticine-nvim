@@ -135,6 +135,9 @@ return packer.startup(function(use)
   -- 缩进竖线提示
   use('lukas-reineke/indent-blankline.nvim')
 
+  -- 终端
+  use({ 'akinsho/toggleterm.nvim', tag = 'v2.*' })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

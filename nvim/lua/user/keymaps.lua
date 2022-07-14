@@ -106,12 +106,31 @@ keymap('o', '<S-l>', 'g_', opts)
 
 -- Terminal --
 -- Better terminal navigation
-keymap('t', '<C-h>', '<C-\\><C-N><C-w>h', term_opts)
-keymap('t', '<C-j>', '<C-\\><C-N><C-w>j', term_opts)
-keymap('t', '<C-k>', '<C-\\><C-N><C-w>k', term_opts)
-keymap('t', '<C-l>', '<C-\\><C-N><C-w>l', term_opts)
+keymap('t', '<C-h>', '<C-\\><C-n><C-w>h', term_opts)
+keymap('t', '<C-j>', '<C-\\><C-n><C-w>j', term_opts)
+keymap('t', '<C-k>', '<C-\\><C-n><C-w>k', term_opts)
+keymap('t', '<C-l>', '<C-\\><C-n><C-w>l', term_opts)
+keymap('t', '<Esc>', '<C-\\><C-n>', opts)
 
 -- hop.nvim
 local hop_trigger_key = '<Leader><Leader>'
 keymap('n', hop_trigger_key .. 'a', ':HopAnywhere<CR>', opts)
 keymap('n', hop_trigger_key .. 'w', ':HopWord<CR>', opts)
+
+-- 插件快捷键配置对象
+local pluginKeys = {}
+
+-- 自定义 toggleterm 3个不同类型的命令行窗口
+-- <leader>tf 浮动
+-- <leader>tr 右侧
+-- <leader>tb 下方
+-- 特殊lazygit 窗口，需要安装 lazygit
+-- <leader>tg lazygit
+pluginKeys.mapToggleTerm = function(toggleterm)
+  vim.keymap.set({ 'n', 't' }, '<leader>tf', toggleterm.toggleF)
+  vim.keymap.set({ 'n', 't' }, '<leader>tr', toggleterm.toggleR)
+  vim.keymap.set({ 'n', 't' }, '<leader>tb', toggleterm.toggleB)
+  vim.keymap.set({ 'n', 't' }, '<leader>tg', toggleterm.toggleG)
+end
+
+return pluginKeys
