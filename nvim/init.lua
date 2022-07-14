@@ -13,6 +13,7 @@ require('user.colorscheme')
 -- LSP
 require('user.lsp')
 require('user.lsp.null-ls')
+require('user.lsp.lspsaga')
 
 -- plugin config
 require('user.plugin-config.cmp') -- 代码补全
