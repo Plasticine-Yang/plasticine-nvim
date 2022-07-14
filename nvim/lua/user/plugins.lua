@@ -105,6 +105,8 @@ return packer.startup(function(use)
   use('nvim-telescope/telescope.nvim')
   -- 在 telescope 中预览图片
   use('nvim-telescope/telescope-media-files.nvim')
+  -- 项目记录
+  use('nvim-telescope/telescope-project.nvim')
 
   -- NvimTree 侧边文件浏览器
   use('kyazdani42/nvim-web-devicons')
@@ -137,6 +139,9 @@ return packer.startup(function(use)
 
   -- 终端
   use({ 'akinsho/toggleterm.nvim', tag = 'v2.*' })
+
+  -- dashboard 启动页
+  use('glepnir/dashboard-nvim')
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
