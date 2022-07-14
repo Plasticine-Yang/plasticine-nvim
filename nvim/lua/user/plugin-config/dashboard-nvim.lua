@@ -13,7 +13,7 @@ db.custom_center = {
   {
     icon = '  ',
     desc = 'Projects',
-    action = 'Telescope projects',
+    action = 'Telescope project',
   },
   {
     icon = '  ',
