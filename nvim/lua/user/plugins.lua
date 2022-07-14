@@ -122,6 +122,9 @@ return packer.startup(function(use)
   -- bufferline 显示打开的 buffer 标签
   use({ 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' })
 
+  -- 缩进竖线提示
+  use('lukas-reineke/indent-blankline.nvim')
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
