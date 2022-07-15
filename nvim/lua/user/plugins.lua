@@ -103,6 +103,8 @@ return packer.startup(function(use)
 
   -- 文件搜索/Symbol 搜索
   use('nvim-telescope/telescope.nvim')
+  -- 文件浏览
+  use('nvim-telescope/telescope-file-browser.nvim')
   -- 在 telescope 中预览图片
   use('nvim-telescope/telescope-media-files.nvim')
   -- 项目记录

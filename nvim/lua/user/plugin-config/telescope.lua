@@ -3,6 +3,8 @@ if not status_ok then
   return
 end
 
+-- extensions
+telescope.load_extension('file_browser')
 telescope.load_extension('media_files')
 telescope.load_extension('project')
 
@@ -96,11 +98,18 @@ telescope.setup({
       filetypes = { 'png', 'webp', 'jpg', 'jpeg' },
       find_cmd = 'rg', -- find command (defaults to `fd`)
     },
+    file_browser = {
+      hijack_netrw = true,
+    },
     project = {
       base_dirs = {
-        '~/projects',
+        '~/projects/core',
+        '~/projects/plasticine-nvim',
+        '~/projects/plasticine-linux-config',
+        '~/projects/vue-projects/plane-wars',
         '~/leetcode',
       },
+      theme = 'dropdown',
     },
     -- Your extension configuration goes here:
     -- extension_name = {
