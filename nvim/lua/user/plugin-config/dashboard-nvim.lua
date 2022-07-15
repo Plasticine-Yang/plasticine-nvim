@@ -20,6 +20,11 @@ db.custom_center = {
     desc = 'Recently files',
     action = 'Telescope oldfiles',
   },
+  {
+    icon = '   ',
+    desc = 'Edit Keymaps',
+    action = 'edit ~/.config/nvim/lua/user/keymaps.lua',
+  },
 }
 
 -- db.custom_header = {

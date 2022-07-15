@@ -20,6 +20,9 @@ vim.g.maplocalleader = ' '
 --   operator_pending_mode = "o"
 
 -- Normal --
+-- Copy function
+keymap('n', 'gyf', '<S-v>g_%y', opts)
+
 -- Better window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
 keymap('n', '<C-j>', '<C-w>j', opts)
@@ -32,8 +35,7 @@ keymap('n', 'K', '5k', opts)
 keymap('n', '<C-u>', '10k', opts)
 keymap('n', '<C-d>', '10j', opts)
 
-keymap('n', '<leader>e', ':Lex 30<cr>', opts)
-
+-- 移动到行首尾
 keymap('n', '<S-h>', '^', opts)
 keymap('n', '<S-l>', 'g_', opts)
 
@@ -50,11 +52,17 @@ keymap('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 -- Navigate buffers
 keymap('n', '<A-h>', ':bprevious<CR>', opts)
 keymap('n', '<A-l>', ':bnext<CR>', opts)
+
+-- close buffer
 keymap('n', '<C-w>', ':bdelete<CR>', opts)
 keymap('n', '<C-w><C-w>', ':bdelete!<CR>', opts)
 
 -- save file
 keymap('n', '<C-s>', ':w<CR>', opts)
+
+-- 代码折叠
+keymap('n', 'gz', ':foldclose<CR>', opts)
+keymap('n', 'guz', ':foldopen<CR>', opts)
 
 -- open telescope
 -- 搜索文件时不要预览
