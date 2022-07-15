@@ -91,8 +91,11 @@ keymap('n', '<leader>f', '<cmd>lua vim.lsp.buf.format { async = true }<CR>', opt
 -- Press jk fast to enter
 keymap('i', 'jk', '<ESC>', opts)
 
-keymap('i', '<C-h>', '<Esc>I', opts)
-keymap('i', '<C-l>', '<Esc>A', opts)
+-- Insert 模式下移动光标
+keymap('i', '<C-h>', '<Esc>i', opts)
+keymap('i', '<C-j>', '<Esc>ja', opts)
+keymap('i', '<C-k>', '<Esc>ka', opts)
+keymap('i', '<C-l>', '<Esc>la', opts)
 
 -- Visual --
 -- Stay in indent mode
