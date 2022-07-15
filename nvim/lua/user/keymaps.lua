@@ -20,6 +20,9 @@ vim.g.maplocalleader = ' '
 --   operator_pending_mode = "o"
 
 -- Normal --
+-- open projects list
+keymap('n', '<leader>p', '<Cmd>Telescope project<CR>', opts)
+
 -- Copy function
 keymap('n', 'gyf', '<S-v>g_%y', opts)
 
