@@ -60,8 +60,8 @@ keymap('n', '<A-h>', ':bprevious<CR>', opts)
 keymap('n', '<A-l>', ':bnext<CR>', opts)
 
 -- close buffer
-keymap('n', '<C-w>', ':bdelete<CR>', opts)
-keymap('n', '<C-w><C-w>', ':bdelete!<CR>', opts)
+keymap('n', '<C-w>', ':Bdelete<CR>', opts)
+keymap('n', '<C-w><C-w>', ':Bdelete!<CR>', opts)
 
 -- save file
 keymap('n', '<C-s>', ':w<CR>', opts)

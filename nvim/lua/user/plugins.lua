@@ -128,7 +128,7 @@ return packer.startup(function(use)
   use({ 'jose-elias-alvarez/null-ls.nvim', requires = 'nvim-lua/plenary.nvim' })
 
   -- bufferline 显示打开的 buffer 标签
-  use({ 'akinsho/bufferline.nvim', tag = 'v2.*', requires = 'kyazdani42/nvim-web-devicons' })
+  use({ 'akinsho/bufferline.nvim', tag = 'v2.*', requires = { 'kyazdani42/nvim-web-devicons', 'moll/vim-bbye' } })
 
   -- 底部信息栏显示
   use({
