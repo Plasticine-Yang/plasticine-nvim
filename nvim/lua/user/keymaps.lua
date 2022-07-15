@@ -23,6 +23,9 @@ vim.g.maplocalleader = ' '
 -- Copy function
 keymap('n', 'gyf', '<S-v>g_%y', opts)
 
+-- Delete function
+keymap('n', 'gdf', '<S-v>g_%d', opts)
+
 -- Better window navigation
 keymap('n', '<C-h>', '<C-w>h', opts)
 keymap('n', '<C-j>', '<C-w>j', opts)
