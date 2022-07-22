@@ -145,6 +145,9 @@ return packer.startup(function(use)
   -- dashboard 启动页
   use('glepnir/dashboard-nvim')
 
+  -- coc.nvim
+  use({ 'neoclide/coc.nvim', branch = 'release' })
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

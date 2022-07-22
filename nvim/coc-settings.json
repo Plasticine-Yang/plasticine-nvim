@@ -1,0 +1,13 @@
+{
+  // 所有文件都支持十六进制颜色高亮显示
+  "colors.filetypes": [
+    "*"
+  ],
+  // 以下语言开启 html-css-support 特性
+  "html-css-support.enabledLanguages": [
+    "html",
+    "vue",
+    "typescriptreact",
+    "javascriptreact"
+  ]
+}
